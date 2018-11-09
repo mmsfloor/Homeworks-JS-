@@ -11,20 +11,20 @@ if (color === null) {
 else {
     if(color == 'black') {
         price = 15;
-        document.write('<img src=black1.png>');
+        document.write('<img src=../img/black1.png>');
     }
     else if(color == 'red') {
         price = 10;
-        document.write('<img src=red-iphone.png>');
+        document.write('<img src=../img/red-iphone.png>');
     }
     else if(color == 'silver') {
         price = 20;
-        document.write('<img src=silver.png>');
+        document.write('<img src=../img/silver.png>');
     }  
     else {
         isCorrect = false;
         isChoosen = false;
-        document.write('<img src=default.png>');
+        document.write('<img src=../img/default.png>');
     }
 }
 
