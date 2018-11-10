@@ -1,17 +1,19 @@
-var characters = [
-    { 'name': 'barney', 'age': 36 },
-    { 'name': 'fred', 'age': 40 }
-    ];
-
-var pluck = function(arr, key) {
-    var values = [];
+(function(){
+    var characters = [
+        { 'name': 'barney', 'age': 36 },
+        { 'name': 'fred', 'age': 40 }
+        ];
     
-    for(var i=0; i<arr.length; i++) {
-        values.push(arr[i][key])
-    }
+    var pluck = function(arr, key) {
+        var values = [];
+        
+        for(var i=0; i<arr.length; i++) {
+            values.push(arr[i][key])
+        }
+        
+        return values;
+    };
     
-    return values;
-};
-
-console.log(pluck(characters, 'name'));
-console.log(pluck(characters, 'age')); 
+    console.log(pluck(characters, 'name'));
+    console.log(pluck(characters, 'age')); 
+}())
