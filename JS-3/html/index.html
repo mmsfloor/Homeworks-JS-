@@ -20,9 +20,6 @@
                 border: 4px solid red;
                 position: relative;
                 overflow: hidden;
-                /* display: flex;
-                flex-direction: column;
-                flex-wrap: wrap; */
             }
     
             .figure {
@@ -36,10 +33,22 @@
             .circle {
                 border-radius: 50%;
             }
+
+            .ellipse {
+                border-radius: 50%;
+            }
     </style>
 </head>
 
 <body>
+    <label>
+        height
+        <input type="number" id="newHeight">
+    </label>
+    <label> 
+        width
+        <input type="number" id="newWidth">
+    </label>   
     <input type="color" id="newColor">
 
     <div>
@@ -56,13 +65,25 @@
                    value="square"
                    name="figure">
         </label>
+        <label>
+            Rectangle
+            <input type="radio"
+                   value="rectangle"
+                   name="figure">
+        </label>
+        <label>
+            Ellipse
+            <input type="radio"
+                   value="ellipse"
+                   name="figure">
+        </label>
     </div>
 
     <div class="area" 
          id="area">
     </div>
 
-    <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
     <script src="../js/main2.js"></script>
 </body>
 </html>
