@@ -30,8 +30,7 @@
         }
 
         if (newWidth.value>=area.offsetWidth || newHeight.value>=area.offsetHeight) {
-            alert('Width and height cannot exceed canvas size: '+ 
-                area.offsetWidth + 'px * '+ area.offsetHeight + 'px');
+            alert('height or width exceeds canvas size ( '+ area.offsetWidth + 'px * '+ area.offsetHeight + 'px )');
             return;
         }
         

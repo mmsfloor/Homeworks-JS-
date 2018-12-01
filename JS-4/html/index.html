@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes</title>
+    <style>
+        .inp-wrap {
+            height:40px;
+        }
+
+        .notes-count-wrap {
+            height:25px;
+        }
+
+        .inpNewNote {
+            width: 300px;
+        }
+
+        .border-red {
+            border: 1px solid red;
+        }
+
+        .err-msg {
+            color: red;
+            display: none;
+        }
+
+        .err-msg-display {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="inp-wrap">
+        <input class="inpNewNote" type="text">
+        <button class="btnAddNote">Add</button>
+        <div class="err-msg"></div>
+    </div>
+    <div class="notes-count-wrap">
+        <span class="notes-count"></span>
+    </div>
+    <div class="container"></div>
+
+    <!-- <script src="../js/notes/notes.controller.js"></script>
+    <script src="../js/notes/notes.view.js"></script>
+    <script src="../js/notes/notes.model.js"></script> -->
+    <script src="../js/app.js"></script>
+
+
+</body>
+</html>
